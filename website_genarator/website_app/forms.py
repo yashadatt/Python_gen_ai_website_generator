@@ -9,17 +9,17 @@ class WebsiteDataForm(forms.ModelForm):
 
 class AuthorForm(forms.ModelForm):
     class Meta:
-        model = WebsiteData
+        model = Author
         fields = '__all__'
 
 
 class BookForm(forms.ModelForm):
     class Meta:
-        model = WebsiteData
+        model = Book
         fields = '__all__'
 
 
 class ReviewForm(forms.ModelForm):
     class Meta:
-        model = WebsiteData
+        model = Review
         fields = '__all__'
