@@ -26,4 +26,4 @@ jobs:
         python manage.py check
 
     - name: Run Tests (placeholder)
-      run: echo "Here you'd run: python manage.py test"
+      run: echo 'Here you would run --> python manage.py test'
