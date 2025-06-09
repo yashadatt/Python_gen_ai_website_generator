@@ -17,3 +17,8 @@ db.sqlite3
 **/migrations/*.pyc
 **/migrations/__pycache__/
 
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

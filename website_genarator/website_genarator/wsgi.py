@@ -7,10 +7,5 @@ For more information on this file, see
 https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
 """
 
-import os
+website_genarator.wsgi:application
 
-from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "website_genarator.settings")
-
-application = get_wsgi_application()

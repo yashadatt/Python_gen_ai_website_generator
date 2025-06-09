@@ -20,4 +20,6 @@ isort
 mypy
 bandit
 coverage
+gunicorn
 pip-audit
+gunicorn
