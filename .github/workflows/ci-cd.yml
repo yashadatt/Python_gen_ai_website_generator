@@ -20,10 +20,28 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    - name: Run Black (formatter check)
+      run: black --check .
+
+    - name: Run Flake8 (linting)
+      run: flake8 .
+
+    - name: Run isort (import order checker)
+      run: isort . --check-only
+
+    - name: Run Bandit (security scan)
+      run: bandit -r .
+
+    - name: Run Pip Audit (dependency scan)
+      run: pip-audit
+    
+    - name: Run Mypy (type checking)
+      run: mypy .
+
     - name: Run Django checks
       run: |
         cd website_genarator
         python manage.py check
-
+	
     - name: Run Tests (placeholder)
       run: echo 'Here you would run --> python manage.py test'
