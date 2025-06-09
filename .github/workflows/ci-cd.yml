@@ -2,9 +2,12 @@ name: Django CI/CD
 
 on:
   push:
-    branches: ["*"]
+    branches:
+      - '*'
+
 jobs:
   build:
+    name: Django CI/CD Build
     runs-on: ubuntu-latest
 
     steps:
@@ -27,3 +30,4 @@ jobs:
 
     - name: Run Tests (placeholder)
       run: echo 'Here you would run --> python manage.py test'
+
