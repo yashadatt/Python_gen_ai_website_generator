@@ -199,3 +199,9 @@ widgetsnbextension==4.0.10
 xlrd==2.0.1
 yarl==1.15.2
 zipp==3.18.1
+black
+isort
+mypy
+bandit
+coverage
+pip-audit
